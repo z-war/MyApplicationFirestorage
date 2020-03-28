@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1067950284935",
+    "firebase_url": "https://forfirestorage.firebaseio.com",
+    "project_id": "forfirestorage",
+    "storage_bucket": "forfirestorage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067950284935:android:6347e9f28410417566d822",
+        "android_client_info": {
+          "package_name": "com.example.myapplicationfirestorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067950284935-ul117aof8eofip3h2duh85eukpfbed36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplicationfirestorage",
+            "certificate_hash": "a3a80d142d3ce9552ec6120678384f46d0728a85"
+          }
+        },
+        {
+          "client_id": "1067950284935-qbuc4f5aa1sv2uvpqvtipgpvgaatqqdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzFxtey7K-KJVpaYSZ8ceaRLpUsvitZB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067950284935-qbuc4f5aa1sv2uvpqvtipgpvgaatqqdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
