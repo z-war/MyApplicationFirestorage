@@ -4,30 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DownloadImage">
+    tools:context=".VideoUpload">
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/down_image_nameET"
-        android:maxLength="20"
-        android:hint="Add Image Name"
+        android:id="@+id/videonameET"
+        android:hint="Please Enter Video Name"
         android:layout_margin="10dp"
         />
-    <ImageView
-        android:id="@+id/down_imagetouploadIV"
+    <VideoView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_below="@id/down_image_nameET"
-
-        android:padding="20dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_file_upload"/>
+        android:layout_height="200dp"
+        android:id="@+id/videoview"
+        android:layout_below="@id/videonameET"
+        android:layout_margin="20dp"
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Download Image"
-        android:id="@+id/downimgbtn"
-        android:layout_below="@id/down_imagetouploadIV"
+        android:id="@+id/videouploadbtn"
+        android:text="Upload to FireStore"
+        android:layout_below="@id/videoview"
         android:layout_margin="10dp"
         />
 

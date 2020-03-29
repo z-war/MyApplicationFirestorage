@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DownloadImage"></activity>
+        <activity android:name=".VideoDownlaod"></activity>
+        <activity android:name=".VideoUpload" />
+        <activity android:name=".DownloadImage" />
         <activity android:name=".UploadImage" />
         <activity android:name=".MainActivity">
             <intent-filter>

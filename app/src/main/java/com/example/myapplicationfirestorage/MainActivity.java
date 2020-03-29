@@ -36,7 +36,21 @@ public class MainActivity extends AppCompatActivity {
         Intent intent  = new Intent(getBaseContext(),UploadImage.class);
         startActivity(intent);
     }
-
+    public void touploadVideo(View v)
+    {
+        Intent intent  = new Intent(getBaseContext(),VideoUpload.class);
+        startActivity(intent);
+    }
+    public void todownloadVideo(View v)
+    {
+        Intent intent  = new Intent(getBaseContext(),VideoDownlaod.class);
+        startActivity(intent);
+    }
+    public void todownload(View v)
+    {
+        Intent intent  = new Intent(getBaseContext(),DownloadImage.class);
+        startActivity(intent);
+    }
     public void adduser(View v) {
         try {
 
