@@ -11,18 +11,19 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:id="@+id/movetouploadbtn"
-      android:text="Upload Image"
-      android:onClick="toupload"
+      android:text="Sign Up"
+      android:onClick="tosignup"
       android:layout_margin="10dp"
+
       />
   <Button
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:id="@+id/movetodownloadbtn"
-    android:text="Download Image"
+    android:text="Sign In"
       android:layout_margin="10dp"
       android:layout_below="@id/movetouploadbtn"
-      android:onClick="todownload"/>
+      android:onClick="tosignin"/>
   <Button
       android:layout_width="match_parent"
       android:layout_height="wrap_content"

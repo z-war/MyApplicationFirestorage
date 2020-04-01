@@ -51,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent  = new Intent(getBaseContext(),DownloadImage.class);
         startActivity(intent);
     }
+    public void tosignup(View v)
+    {
+        startActivity(new Intent(getBaseContext(),SignupActivity.class));
+    }
+
+    public void tosignin(View v)
+    {
+        startActivity(new Intent(getBaseContext(),LoginActivty.class));
+    }
     public void adduser(View v) {
         try {
 
