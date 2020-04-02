@@ -28,10 +28,17 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Signup"
+        android:text="Sign In "
         android:layout_margin="5dp"
         android:id="@+id/Lbtnsignup"
         android:layout_below="@id/LpassET"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Lbtnsignup"
+        android:layout_margin="5dp"
+        android:id="@+id/sign_in_btn_google"/>
     <ProgressBar
         android:layout_width="70dp"
         android:layout_height="70dp"

@@ -1,0 +1,33 @@
+package com.example.myapplicationfirestorage;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+
+public class ShowUserData extends AppCompatActivity {
+    GoogleSignInOptions gso;
+    GoogleSignInAccount clientacount;
+    TextView name, phone;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_show_user_data);
+        try {
+            name = findViewById(R.id.user_name);
+            phone = findViewById(R.id.user_phone);
+            gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
+            clientacount = GoogleSignIn.getLastSignedInAccount(this);
+            name.setText(clientacount.getDisplayName().toString());
+            phone.setText(clientacount.getEmail().toString());
+        } catch (Exception e) {
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        }
+    }
+}
