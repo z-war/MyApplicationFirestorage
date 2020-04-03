@@ -33,6 +33,22 @@
         android:layout_margin="5dp"
         android:id="@+id/btnsignup"
         android:layout_below="@id/passET"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_in_btn_google"
+        android:layout_margin="5dp"
+        android:tooltipText="Continue with Google"
+        android:layout_below="@id/btnsignup"/>
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_login_btn"
+        android:layout_margin="5dp"
+        android:layout_below="@id/sign_in_btn_google"
+        android:textSize="25dp"
+        />
     <ProgressBar
         android:layout_width="70dp"
         android:layout_height="70dp"

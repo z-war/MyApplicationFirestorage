@@ -68,8 +68,10 @@ public class LoginActivty extends AppCompatActivity {
 
             email = findViewById(R.id.LemailET);
             pass = findViewById(R.id.LpassET);
+
             pgr = findViewById(R.id.Lprgbar);
             btn = findViewById(R.id.Lbtnsignup);
+
             mauth  = FirebaseAuth.getInstance();
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -77,9 +79,9 @@ public class LoginActivty extends AppCompatActivity {
                     signin();
                 }
             });
+
             gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
             client = GoogleSignIn.getClient(this,gso);
-
 
             btn_google_sign_in = findViewById(R.id.sign_in_btn_google);
             btn_google_sign_in.setOnClickListener(new View.OnClickListener() {
@@ -90,8 +92,8 @@ public class LoginActivty extends AppCompatActivity {
             });
 //            FacebookSdk.sdkInitialize(this);
 //            AppEventsLogger.activateApp(this);
-            callbackManager  = CallbackManager.Factory.create();
 
+            callbackManager  = CallbackManager.Factory.create();
             FacebookDataTextView = (TextView)findViewById(R.id.TextView1);
 
             fb_btn_login = findViewById(R.id.sign_in_btn_fb);
@@ -103,7 +105,6 @@ public class LoginActivty extends AppCompatActivity {
                 Toast.makeText(this, "Facebook User Already Logged In", Toast.LENGTH_SHORT).show();
             }else
             {
-                Toast.makeText(this, "Facebook User Not Logged In", Toast.LENGTH_SHORT).show();
             }
 
             accessTokenTracker = new AccessTokenTracker() {
@@ -230,8 +231,8 @@ public class LoginActivty extends AppCompatActivity {
     private void handleSignIntask(Task<GoogleSignInAccount> task) {
         try {
             pgr.setVisibility(View.INVISIBLE);
-            GoogleSignInAccount account = task.getResult(ApiException.class);
-            Map<String,Object> mydatamap = new HashMap<>();
+                GoogleSignInAccount account = task.getResult(ApiException.class);
+                Map<String,Object> mydatamap = new HashMap<>();
 
             Toast.makeText(this, "User Loggged In "+account.getDisplayName(), Toast.LENGTH_SHORT).show();
             startActivity(new Intent(getBaseContext(),ShowUserData.class));
